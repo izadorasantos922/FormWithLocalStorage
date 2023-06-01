@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/images/bg-intro-desktop.png) hsl(0, 100%, 74%) no-repeat;
+    padding: 0 3rem;
+}
+
+main{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 40% 40%);
+    gap: 2rem;
+}
+
+.head{
+    font-size: 14px;
+    background-color:  hsl(248, 32%, 49%) ;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color:  hsla(240, 40%, 98%, 0.87);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.397);
+}
+.head span{
+    color: #fff;
+}
+form{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    height: 400px;
+    box-shadow: -1px 13px 5px 1px rgba(0, 0, 0, 0.397);
+}
+
+form input{
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+    font-weight: bold;
+}
+
+.input_firstname_div, .input_lastname_div, .input_email_div, .input_password_div{
+     position: absolute;
+     margin: 5px auto 0 auto;
+    right: 0;
+    left: 0;
+    width: 90%;
+}
+.input_firstname_div{
+    top: 7%;
+}
+
+.input_lastname_div{
+    top: 23%;
+}
+
+.input_email_div{
+    top: 39%;
+}
+
+.input_password_div{
+top: 55%;
+}
+
+form button[type="submit"] {
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    width: 85%;
+    border: 2px solid transparent;
+    border: 0;
+    background-color:  hsl(154, 59%, 51%);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+}
+form button[type="submit"]:hover{
+    background-color:  hsl(154, 62%, 62%);
+}
+
+.terms-services{
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+    left: 0;
+    width: 80%;
+    text-align: center;
+    margin: 12px auto 0 auto;
+    color: gray;
+    font-size: 12px;
+}
+.terms-services span{
+    font-weight: bold;
+    color:  hsl(0, 100%, 74%) ;
+}
+.content h1{
+    margin-bottom: 10px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.content p {
+   color:  hsla(240, 40%, 98%, 0.87);
+}
+
+.text-error-firstname,
+.text-error-lastname,
+.text-error-email,
+.text-error-password
+{
+    text-align: end;
+    margin-top: 5px;
+    margin-right: 8px;
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.error{
+    border: 2px solid red;
+    background: url(/images/icon-error.svg) no-repeat; 
+    background-position: 420px 8px;
+    animation: shake 0.8s ease-in-out;
+}
+.error::placeholder{
+    color: transparent;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 30%{transform: translateX(-5px);}
+   50%, 70%, 90% { transform: translateX(-2px); }
+  20%, 40% { transform: translateX(5px); }
+   60%, 80% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+@media(max-width: 680px){
+    main{
+        grid-template-columns: repeat(1, 40% 60%);
+    }
+    .content h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 425px){
+    main{
+        margin-top: 9rem;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h1{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    form{
+        width: 100%;
+        margin-left: -0.5rem;
+        margin-bottom: 20px;
+    }
+    .error{
+        background-position: 290px 8px;
+    }
+
+}
+
+@media(max-width: 375px){
+    .error{
+        background-position: 250px 8px;
+    }
+    form{
+        padding-right: 2rem;
+        margin-left: -1.5rem;
+    } 
+     
+}
+
+@media(max-width: 325px){
+    main{
+       padding-top: 8rem;
+    }
+    form input{
+        width: 88%;
+    }
+}
+
+  
