@@ -1,6 +1,6 @@
 # FormWithLocalStorage
 
-[English Version](#english-version)  
+[English Version](#english-version)  |  [Versão em Português](#vers%C3%A3o-em-portugu%C3%AAs)
 
 ## English Version
 
@@ -35,4 +35,34 @@ This repository contains a simple web application designed to demonstrate the us
 
 
 ---
+
+## Versão em Português
+
+### Bem-vindo ao Repositório FormWithLocalStorage!
+
+Este repositório contém uma aplicação web simples projetada para demonstrar o uso do Local Storage em JavaScript. O app permite que os usuários preencham um formulário, salvem os dados localmente e os recuperem mesmo após atualizar a página. É um exemplo prático de como persistir dados do usuário no navegador sem um backend.
+
+### Funcionalidades
+- Preencha um formulário com detalhes do usuário.
+- Salve automaticamente os dados do formulário no Local Storage do navegador.
+- Recupere e exiba os dados salvos ao revisitar a página.
+- Limpe os dados salvos com uma única ação.
+- Design responsivo para uma experiência fluida em desktops e dispositivos móveis.
+
+### Tecnologias Utilizadas
+- **HTML5**: Para a estrutura da aplicação.
+- **CSS3**: Para estilização e design responsivo.
+- **JavaScript**: Para implementar a funcionalidade do Local Storage.
+
+### Como Começar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/izadorasantos922/FormWithLocalStorage.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd FormWithLocalStorage
+   ```
+3. Abra o arquivo `index.html` no seu navegador para começar a usar o app.
 
